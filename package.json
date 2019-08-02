@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/elschnitzel/LiquidCalcNode/issues"
   },
-  "homepage": "https://github.com/elschnitzel/LiquidCalcNode#readme"
+  "homepage": "https://github.com/elschnitzel/LiquidCalcNode#readme",
+  "dependencies": {}
 }
