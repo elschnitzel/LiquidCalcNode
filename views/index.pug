@@ -7,57 +7,23 @@ block content
 		.row
 			.col-md-3
 				.form-group
-					label Vorname:
-					input.form-control(type='text', name='test')
+					label Gesamtmenge Liquid:
+					input.form-control(type='number', name='targetTotal')
+					.form-group-append
+						span.form-group-text ml
 			.col-md-3
 				.form-group
-					label Nachname:
-					input.form-control(type='text', name='test')
+					label Nikotinmenge Konzentrat:
+					input.form-control(type='number', name='sourceNicotine')
 		.row
 			.col-md-3
 				.form-group
-					label Passwort:
-					input.form-control(type='text', name='test')
+					label Zielmenge Nikotin:
+					input.form-control(type='number', name='targetNicotine')
 			.col-md-3
 				.form-group
-					label Passwort wiederholen:
-					input.form-control(type='text', name='test')
-		.row
-			.col-md-3
-				.form-group
-					label Weiblich
-					input(type='radio', name='test3', style='margin-bottom:10px;')
-			.col-md-3
-				.form-group
-					label Männlich
-					input(type='radio', name='test3')
-		.row
-			.col-md-3
-				.form-group
-					label(for='tag') Tag
-					select#tag.form-control
-						option 1
-						option 2
-						option 3
-						option 4
-						option 5
-			.col-md-3
-				.form-group
-					label(for='monat') Monat
-					select#monat.form-control
-						option 01
-						option 02
-						option 03
-						option 04
-						option 05
-			.col-md-3
-				label(for='jahr') Jahr
-				select#jahr.form-control
-					option 1997
-					option 1998
-					option 1999
-					option 2000
-					option 2001
+					label Menge Aroma:
+					input.form-control(type='number', name='targetFalvour')
 		.row
 			.col-md-3
 				input.form-control.btn.btn-success(type='submit')
