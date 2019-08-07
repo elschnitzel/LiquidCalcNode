@@ -1,8 +1,17 @@
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 // Init App
 const app = express();
+
+//body parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(express.json());
+app.use(express.urlencoded());
 
 //Load view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -11,7 +20,7 @@ app.set('view engine', 'pug');
 //Home Route
 app.get('/', function (req, res) {
     res.render('index', {
-        title:'Caclulation'
+        title: 'Caclulation'
     });
 });
 

@@ -3,27 +3,38 @@ extends layout
 block content
 	h1.mt-4 Liquid Caclulator
 	section.container
-	form
+	form#inputFrom(action='input' method='post')
 		.row
 			.col-md-3
 				.form-group
 					label Gesamtmenge Liquid:
-					input.form-control(type='number', name='targetTotal')
-					.input-group-append
-						span.input-group-text ml
+					.input-group
+						input#targetTotal.form-control(type='number', name='targetTotal')
+						.input-group-append
+							span.input-group-text ml
 			.col-md-3
 				.form-group
 					label Nikotinmenge Konzentrat:
-					input.form-control(type='number', name='sourceNicotine')
+					.input-group
+						input#sourceNicotine.form-control(type='number', name='sourceNicotine')
+						.input-group-append
+							span.input-group-text mg/ml
 		.row
 			.col-md-3
 				.form-group
 					label Zielmenge Nikotin:
-					input.form-control(type='number', name='targetNicotine')
+					.input-group
+						input#targetNicotine.form-control(type='number', name='targetNicotine')
+						.input-group-append
+							span.input-group-text mg/ml
 			.col-md-3
 				.form-group
 					label Menge Aroma:
-					input.form-control(type='number', name='targetFalvour')
+					.input-group
+						input#targetFalvour.form-control(type='number', name='targetFalvour')
+						.input-group-append
+							span.input-group-text ml
+					
 		.row
 			.col-md-3
-				input.form-control.btn.btn-success(type='submit')
+				input.form-control.btn.btn-success(type='submit', text='test')
