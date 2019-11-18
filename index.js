@@ -12,7 +12,7 @@ app.set('view engine', 'pug');
 //Home Route
 app.get('/', function (req, res) {
     res.render('index', {
-        title: 'Caclulation'
+        title: 'Calculation'
     });
 });
 
